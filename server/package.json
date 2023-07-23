@@ -1,0 +1,25 @@
+{
+  "type": "module",
+  "scripts": {
+    "start": "tsx --watch src/index.ts",
+    "db:migrate": "drizzle-kit generate:sqlite",
+    "db:studio": "drizzle-kit studio",
+    "db:push": "tsx db/migrate.ts",
+    "db:drop": "drizzle-kit drop --config=drizzle.config.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.0.2",
+    "@libsql/client": "^0.3.1",
+    "axios": "^1.4.0",
+    "dotenv": "^16.3.1",
+    "drizzle-orm": "^0.27.2",
+    "hono": "^3.3.0",
+    "jose": "^4.14.4",
+    "undici": "^5.22.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.4",
+    "drizzle-kit": "^0.19.5",
+    "tsx": "^3.12.2"
+  }
+}

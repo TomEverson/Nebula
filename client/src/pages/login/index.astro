@@ -1,0 +1,11 @@
+---
+import MainLayout from "../../layout/MainLayout.astro"
+import Head from "../../layout/Head.astro"
+import Login from "../../components/auth/Login"
+---
+
+<Head title="Login" />
+
+<MainLayout>
+  <Login client:load />
+</MainLayout>
